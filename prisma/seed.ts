@@ -6,13 +6,11 @@ async function main() {
       name: "game-1",
     },
   });
-  prisma.game.create({
+  await prisma.game.create({
     data: {
       name: "game-2",
     },
   });
-
-  console.log({ alice, bob });
 }
 main()
   .then(async () => {
