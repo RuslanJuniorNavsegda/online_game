@@ -1,1 +1,3 @@
-export function geeIdleGames() {}
+export async function getIdleGames() {
+  gameRepository.gamesList();
+}
